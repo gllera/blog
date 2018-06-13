@@ -899,36 +899,6 @@ if (typeof module === 'object' && module.exports) {
   };
 }
 
-// u('.button').on('click', function (e) {
-//     u(e.target).find('.ripple').remove()
-
-//     const target = e.target
-//     const rect = target.getBoundingClientRect()
-//     const d = Math.max(this.clientWidth, this.clientHeight)
-
-//     const offset = {
-//         x: target.offsetParent.offsetLeft,
-//         y: target.offsetParent.offsetTop
-//     }
-
-//     const scroll = {
-//         x: window.scrollX || document.documentElement.scrollLeft,
-//         y: window.scrolly || document.documentElement.scrollTop
-//     }
-
-//     const top = e.pageY - scroll.y - offset.y - d / 2 + rect.top
-//     const left = e.pageX - scroll.x - offset.x - d / 2 + rect.left
-
-//     const ripple = document.createElement('span')
-//     ripple.className = 'ripple'
-//     ripple.style.height = ripple.style.width = d + 'px'
-//     ripple.style.top = top + 'px'
-//     ripple.style.left = left + 'px'
-
-//     target.appendChild(ripple)
-//     return false
-// })
-
 (function () {
     const debounce = function (func, delay) {
         var inDebounce = undefined
@@ -969,12 +939,12 @@ if (typeof module === 'object' && module.exports) {
         }
     }
 
-    const ripples = document.querySelectorAll('[ripple]')
+    const ripples = document.querySelectorAll('.ripple')
 
     for (var i = 0; i < ripples.length; i++) {
         const ripple = ripples[i]
         const rippleContainer = document.createElement('div')
-        rippleContainer.className = 'ripple--container'
+        rippleContainer.className = 'ripple--fx'
         ripple.addEventListener('mousedown', showRipple)
         ripple.addEventListener('mouseup', debounce(cleanUp, 2000))
         ripple.rippleContainer = rippleContainer
