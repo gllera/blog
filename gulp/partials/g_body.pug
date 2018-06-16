@@ -1,24 +1,42 @@
 header
-  a.button.ripple.highlight reservar
+	a.button.ripple.highlight reservar
 main
-  section
-    .fixed.s-landing
-      h1.large Parallax Background
-      p No JavaScript, Start scrolling
-  section
-    .fixed
-      h1 The Day My Mother Forgot to Cry
-      p
-        | I shudder to recall that dreadful Diwali night of October 2007, when my mother knocked our bed room at the dead of
-        | the night enquiring where the toilet was. She looked disoriented and totally confused. Unable to understand the
-        | cause for her abnormal behaviour, we thought she was still in a semi-sleep state and showed her the toilet. But
-        | even after coming out of toilet she was unable to find her way to her bed room.
-  section
-    .fixed
-      | Sensing that something is seriously amiss, we took her next day to the nearby nursing home for diagnosis and treatment.
-      | She was immediately referred to a neurosurgeon and after a MRI scan it was confirmed that she suffered a brain stroke.
-      | The report showed certain grey patches which the doctor referred to as clots have affected her memory totally. The
-      | doctor informed that the memory loss is irreversible due to her old age. He, however, assured that further, damage
-      | to the brain can be arrested with drugs.
-  section
-    .fixed Hola
+	section.s-landing
+		.fixed
+			h1.large Parallax Background
+			p No JavaScript, Start scrolling
+			//- picture
+			//- 	source(media='(min-width: 1500px)', srcset='https://picsum.photos/1920/1080')
+			//- 	source(media='(min-width: 800px)', srcset='https://picsum.photos/1280/720')
+			//- 	img(src='https://picsum.photos/150/150', alt='Flowers', style='width:auto;')
+	section
+		.fixed
+			h1 The Day My Mother Forgot to Cry
+			p
+				| I shudder to recall that dreadful Diwali night of October 2007, when my mother knocked our bed room at the dead of
+				| the night enquiring where the toilet was. She looked disoriented and totally confused. Unable to understand the
+				| cause for her abnormal behaviour, we thought she was still in a semi-sleep state and showed her the toilet. But
+				| even after coming out of toilet she was unable to find her way to her bed room.
+	section.s-form
+		form.z-2
+			h2 Hoshi
+			span.input.input--hoshi
+				input#input-4.input__field.input__field--hoshi(type='text')
+				label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+					span.input__label-content.input__label-content--hoshi Name
+			span.input.input--hoshi
+				input#input-5.input__field.input__field--hoshi(type='text')
+				label.input__label.input__label--hoshi.input__label--hoshi-color-2(for='input-5')
+					span.input__label-content.input__label-content--hoshi Street
+			span.input.input--hoshi
+				input#input-6.input__field.input__field--hoshi(type='text')
+				label.input__label.input__label--hoshi.input__label--hoshi-color-3(for='input-6')
+					span.input__label-content.input__label-content--hoshi Town
+		//- 	input(type='text', name='field1', placeholder='Full Name')
+		//- 	input(type='email', name='field2', placeholder='Email')
+		//- 	input(type='date', name='field3', placeholder='')
+		//- 	input(type='url', name='field3', placeholder='Website')
+		//- 	textarea(placeholder='Message', onkeyup='adjust_textarea(this)')
+		//- 	a.button.ripple.confirm Send Message
+	section
+		.fixed Hola

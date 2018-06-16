@@ -1,4 +1,10 @@
+@import '~normalize-scss/sass/normalize.scss';
+@include normalize();
 @import './css/vars';
+@import './css/mixins';
 @import './css/colors';
 @import './css/body';
+@import './css/images';
 @import './css/buttons';
+@import './css/forms';
+@import './css/extras';

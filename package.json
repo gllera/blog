@@ -25,6 +25,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "flatpickr": "^4.5.0",
+    "normalize-scss": "^7.0.1",
     "umbrellajs": "^2.10.2"
   }
 }
