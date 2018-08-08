@@ -2,7 +2,6 @@ baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "John Doe's blog"
 googleAnalytics = ""
-ignorefiles = [ "gulp/.*" ]
 
 [social]
     # Add your social network accounts to the profile section on the left

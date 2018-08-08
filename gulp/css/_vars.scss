@@ -1,7 +1,0 @@
-$main-color: #23d400;
-$main-color-light: lighten($main-color, 30%);
-$main-color-dark: darken($main-color, 30%);
-$highlight:#c92323;
-$confirm:$main-color;
-$white:#e7e7e7;
-$mobile-cond: "(orientation:portrait) and (max-width: 480px), (orientation:landscape) and (max-height: 480px)";
