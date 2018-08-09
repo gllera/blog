@@ -1,0 +1,7 @@
+{{ partial "header" . }}
+<div class="post-content container" itemprop="articleBody">
+    {{ .Content }}
+    <br>
+    {{ partial "disqus" . }}
+</div>
+{{ partial "footer" . }}
