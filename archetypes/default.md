@@ -1,6 +1,7 @@
-+++
-title = "gab"
-date = {{ .Date }}
-description = "123"
-draft = false
-+++
+---
+title:  {{ replace .Name "-" " " | title }}
+date:   {{ .Date }}
+slug:   {{ .Name }}
+image:  /images/logo-inv.png
+draft:  true
+---
