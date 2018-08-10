@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>gllera</title>
+    <meta name="author">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.46" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="alternate" type="application/rss+xml" title="gllera" href="http://feeds.feedburner.com/llera">
+</head>
+
+<body>
+
+<div class="post-content container" itemprop="articleBody">
+    <p><img src="{{ site.url }}/images/vcs.png" alt="Git vs SVN" /></p>
+
+<p>Después de cometer muchos errores y decisiones incorrectas a medida que programamos software, encontramos la necesidad de usar un sistema de control de versiones que nos facilite hacer rectificaciones al código y trabajar el mismo proyecto con otras personas. A lo largo de varios años he trabajado con TFS, SVN y GIT, he investigado otros como Mercurial y Bazaar, de todos ellos para mí el mejor es Git y si eres de los que consideran que es más adecuado (según popularidad) su otro competidor más cercano el SVN, te comentaré por qué no es mi caso.</p>
+
+<p>Prefiero Git porque:</p>
+
+<ul>
+<li>Puedo tener varias versiones de prueba de un mismo desarrollo en mi ordenador como si fuese una, debido a las ramas Git que puedo hacer en local. Con SVN pudiese hacerme estas ramas en el servidor pero en la práctica de esta forma hay muchas pegas y no es viable. En Git estos procesos están tenidos en cuenta y debidamente optimizados por lo que con este usar varias ramas del mismo proyecto es hasta más recomendado.</li>
+<li>Con las ramas personales en local de Git dispongo además de mi propio historial de cambios aparte del ya compartido con los compañeros de equipo. Esto sin duda da más libertad para hacer todos los Commits que estimemos convenientes sin preocuparnos de si están correctos para no de afectar al resto del equipo y servirán de referencia a la hora de detectar y corregir errores.</li>
+<li>Siempre es más recomendado y fácil de depurar los Commits unitarios, en esto SVN tampoco pone mucho de su parte. En Git puedo usar un índice al cual se le indica hasta qué parte de cada fichero quiero hacer Commit o combinar con otra rama.</li>
+</ul>
+
+<p>Estos 3 aspectos para mi han sido suficientes para preferir Git sobre SVN, en lo demás, como programador, ninguno de los 2 me ha beneficiado notablemente más que el otro. Git puede parecer más complejo pero puede usarse como si fuese SVN y entonces no lo sería tanto, se adapta muy bien lo mismo a estilos de desarrollos simples que complejos. Si quieres probar Git, te recomiendo el cliente <a href="http://www.syntevo.com/smartgit/">SmartGitHg</a>. En otro post comentaré cómo usar Git aunque el repositorio sea SVN.</p>
+
+    <br>
+    <div id="disqus_thread"></div>
+<script>
+  
+
+  var disqus_config = function () {
+      this.page.url = "https:\/\/example.org\/2014\/01\/por-qu%C3%A9-prefiero-git-a-svn\/";  
+      this.page.identifier = "Por qué prefiero Git a SVN"; 
+  };
+  (function() {  
+      var d = document, s = d.createElement('script');
+
+      s.src = '//gllera.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+<nav class="navbar navbar-default navbar-static-bottom-fix">
+  <div class="container footer-content">
+    <row>
+      <div class="col-xs-6 text-sm-left footer-text">
+        Por Gabriel Llera
+      </div>
+      <div class="col-xs-6 text-sm-right footer-text">
+        Copyright <img src="https://licensebuttons.net/l/by/4.0/80x15.png" alt="Creative Commons">
+      </div>
+    </row>
+  </div>
+</nav>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

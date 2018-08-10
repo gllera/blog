@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>gllera</title>
+    <meta name="author">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.46" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="alternate" type="application/rss+xml" title="gllera" href="http://feeds.feedburner.com/llera">
+</head>
+
+<body>
+
+<div class="post-content container" itemprop="articleBody">
+    <p>Si quieres usar Git y tus compañeros de equipo quieren usar SVN te mostraré un simple truco que uso con el que todos quedarán contentos. Si ya intentaste usar el comando git-svn que incluye Git para estos casos y no te fue del todo compatible con el repositorio SVN (como es mi caso) te recomiendo hacer lo siguiente.</p>
+
+<p><img src="{{ site.url }}/images/git-svn-structure.png" alt="git-svn-structure" /></p>
+
+<p>La idea básicamente es “envolver” los repositorios SVN en un repositorio Git. Asi los cambios que se hagan en Git serán detectados por SVN y viceversa. Donde único hará falta nuestra intervención será en el momento que se agreguen nuevos ficheros ya que estos no estarían supervisados por el otro sistema de control de versiones y para solucionar automáticamente esto he creado un pequeño programa lo haga, se encuentra en:</p>
+
+<p><a href="https://github.com/gllera/git-wrapper">https://github.com/gllera/git-wrapper</a></p>
+
+<p>Todavía no tiene todo lo que me gustaría ponerle pero cumple con su función básica que es la que comento aquí. Toda mejora que se le haga es bienvenida. El modelo que sigo para usar Git con SVN es tener en local una rama master en la que los repositorios SVN no deben detectar modificaciones a menos que vaya a hacer Commit a SVN y otra rama develop en la que hacer los desarrollos.</p>
+
+    <br>
+    <div id="disqus_thread"></div>
+<script>
+  
+
+  var disqus_config = function () {
+      this.page.url = "https:\/\/example.org\/2014\/01\/otro-m%C3%A9todo-de-usar-git-con-svn\/";  
+      this.page.identifier = "Otro método de usar Git con SVN"; 
+  };
+  (function() {  
+      var d = document, s = d.createElement('script');
+
+      s.src = '//gllera.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+<nav class="navbar navbar-default navbar-static-bottom-fix">
+  <div class="container footer-content">
+    <row>
+      <div class="col-xs-6 text-sm-left footer-text">
+        Por Gabriel Llera
+      </div>
+      <div class="col-xs-6 text-sm-right footer-text">
+        Copyright <img src="https://licensebuttons.net/l/by/4.0/80x15.png" alt="Creative Commons">
+      </div>
+    </row>
+  </div>
+</nav>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
