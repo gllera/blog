@@ -1,10 +1,9 @@
 ---
-layout: post
-title:  "¿Grado en Informática de la UPM?"
-date:   2015-03-27 20:41:14 +0100
+title:  ¿Grado en Informática de la UPM?
+date:   2015-03-27T20:41:14+01:00
 image:  /images/FacInformatica.png
 ---
-![gReader logo]({{ site.url }}/images/FacInformatica.png)
+![gReader logo](FacInformatica.png)
 
 Mi carrera académica a tenido sus altas y sus bajas a lo largo del tiempo. Modestamente siempre he sido de los estudiantes que mejores notas sacaban en clases, hasta que tuve que interrumpir mis estudios cuando me vine a España (antes vivía en Cuba). Por motivos económicos tuve que trabajar y estudiar y hubo un tiempo en que trabajé solamente, fue entonces que choqué con la realidad de que la mayor parte de la materia que se imparte en esta carrera no tiene utilidad práctica/teórica en un centro de trabajo. Entonces me pregunto ¿porqué tuviese una empresa que tener en cuenta realmente un título universitario de informática en un currículo?
 

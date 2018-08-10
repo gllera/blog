@@ -1,10 +1,9 @@
 ---
-layout: post
-title:  "Por qué prefiero Git a SVN"
-date:   2014-01-19 05:01:46 +0100
+title:  Por qué prefiero Git a SVN
+date:   2014-01-19T05:01:46+01:00
 image:  /images/vcs.png
 ---
-![Git vs SVN]({{ site.url }}/images/vcs.png)
+![Git vs SVN](vcs.png)
 
 Después de cometer muchos errores y decisiones incorrectas a medida que programamos software, encontramos la necesidad de usar un sistema de control de versiones que nos facilite hacer rectificaciones al código y trabajar el mismo proyecto con otras personas. A lo largo de varios años he trabajado con TFS, SVN y GIT, he investigado otros como Mercurial y Bazaar, de todos ellos para mí el mejor es Git y si eres de los que consideran que es más adecuado (según popularidad) su otro competidor más cercano el SVN, te comentaré por qué no es mi caso.
 

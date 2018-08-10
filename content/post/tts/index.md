@@ -1,10 +1,9 @@
 ---
-layout: post
-title:  "Síntesis de voz"
-date:   2015-12-06 23:12:06 +0100
+title:  Síntesis de voz
+date:   2015-12-06T23:12:06+01:00
 image:  /images/tts_woman.png
 ---
-![TTS Woman]({{ site.url }}/images/tts_woman.png)
+![TTS Woman](tts_woman.png)
 
 Seguramente alguna vez intentando leer un libro desde el móvil o tablet has desistido porque te producía molestias en los ojos de fijar la vista. Esto es algo que no dejarán de puntualizar los que anunciantes de libros electrónicos. Pero, ¿y si la solución a este problema es más simple de lo que pensamos? Dime si:
 
@@ -16,4 +15,4 @@ Una vez tenemos un buen sintetizador de voz instalado y configurado en el móvil
 
 Es una experiencia cuanto menos interesante la de ir por el metro o por la calle mirando al alrededor mientras escuchamos una buena noticia o un buen libro, ya yo lo he probado y me ha parecido genial. Aunque también puedes cerrar los ojos en la cama y centrarte en la lectura ;)
 
-![Headphones Woman]({{ site.url }}/images/headphones.png)
+![Headphones Woman](headphones.png)
