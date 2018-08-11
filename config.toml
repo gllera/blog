@@ -2,6 +2,7 @@ baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "gllera"
 googleAnalytics = ""
+rssUrl = "http://feeds.feedburner.com/llera"
 
 [social]
     # Add your social network accounts to the profile section on the left

@@ -1,5 +1,6 @@
 {{ define "main" }}
 <div class="post-content container" itemprop="articleBody">
     {{ .Content }}
+    {{ partial "disqus" . }}
 </div>
 {{ end }}

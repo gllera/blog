@@ -1,2 +1,26 @@
-{{ partial "head" . }}
-<body>
+<section>
+    {{ printf "%#v" .Site.Params }}
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 text-left">
+                        {{ if not .IsHome }}
+                    <a href="" class="btn btn-default btn-round btn-lg" role="button">
+                        <strong>INICIO</strong>
+                    </a>
+                    {{ end }}
+                </div>
+                <div class="col-xs-6 text-right">
+                    <div class="btn-group">
+                        <a href="{{ ref . `about` }}" class="btn btn-default btn-round btn-lg" role="button">
+                            <i class="fa fa-user"></i>
+                        </a>
+                        <a href="http://feeds.feedburner.com/llera" class="btn btn-default btn-round btn-lg" role="button">
+                            <i class="fa fa-rss-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
