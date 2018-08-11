@@ -1,7 +1,7 @@
 ---
 title:  Cacheando el HDD
 date:   2014-02-15T21:15:11+01:00
-image:  /images/SSD_HDD.png
+image:  SSD_HDD.png
 ---
 ![HDD](SSD_HDD.png)
 

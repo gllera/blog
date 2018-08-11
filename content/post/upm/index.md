@@ -1,7 +1,7 @@
 ---
 title:  ¿Grado en Informática de la UPM?
 date:   2015-03-27T20:41:14+01:00
-image:  /images/FacInformatica.png
+image:  FacInformatica.png
 ---
 ![gReader logo](FacInformatica.png)
 

@@ -1,7 +1,7 @@
 ---
 title:  Autenticación en 2 pasos
 date:   2015-12-05T20:45:16+01:00
-image:  /images/2fa.png
+image:  2fa.png
 ---
 ![2 factor authentication](2fa.png)
 

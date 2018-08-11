@@ -1,7 +1,7 @@
 ---
 title:  iNUM - Llamadas internacionales gratuitas
 date:   2014-01-18T20:15:55+01:00
-image: /images/inum.png
+image:  inum.png
 ---
 
 ![iNUM logo](inum.png)

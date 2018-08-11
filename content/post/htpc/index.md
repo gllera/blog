@@ -1,7 +1,7 @@
 ---
 title:  El HTPC, un ordenador para todos
 date:   2015-03-28T18:01:22+01:00
-image:  /images/htpc.png
+image:  htpc.png
 ---
 ![HTPC](htpc.png)
 

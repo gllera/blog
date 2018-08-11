@@ -1,7 +1,7 @@
 ---
 title:  Otro método de usar Git con SVN
 date:   2014-01-19T22:25:08+01:00
-image:  /images/git-svn-structure.png
+image:  git-svn-structure.png
 ---
 Si quieres usar Git y tus compañeros de equipo quieren usar SVN te mostraré un simple truco que uso con el que todos quedarán contentos. Si ya intentaste usar el comando git-svn que incluye Git para estos casos y no te fue del todo compatible con el repositorio SVN (como es mi caso) te recomiendo hacer lo siguiente.
 

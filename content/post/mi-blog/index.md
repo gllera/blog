@@ -1,7 +1,7 @@
 ---
 title:  Mi primera publicación - Mi Blog
 date:   2012-01-07T04:03:26+01:00
-image:  /images/logo-inv.png
+image:  logo-inv.png
 ---
 ![Gabriel Llera Garcia](logo-inv.png)
 

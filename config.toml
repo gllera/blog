@@ -2,6 +2,8 @@ baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "gllera"
 googleAnalytics = ""
+paginate = 6
+summaryLength = 70
 
 [params]
     rssUrl = "http://feeds.feedburner.com/llera"

@@ -1,7 +1,7 @@
 ---
 title:  Suscripciones RSS
 date:   2015-04-05T23:43:29+01:00
-image:  /images/flux-rss.png
+image:  flux-rss.png
 ---
 ![RSS logo](flux-rss.png)
 

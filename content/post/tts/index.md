@@ -1,7 +1,7 @@
 ---
 title:  Síntesis de voz
 date:   2015-12-06T23:12:06+01:00
-image:  /images/tts_woman.png
+image:  tts_woman.png
 ---
 ![TTS Woman](tts_woman.png)
 

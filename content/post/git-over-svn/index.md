@@ -1,7 +1,7 @@
 ---
 title:  Por qué prefiero Git a SVN
 date:   2014-01-19T05:01:46+01:00
-image:  /images/vcs.png
+image:  vcs.png
 ---
 ![Git vs SVN](vcs.png)
 
