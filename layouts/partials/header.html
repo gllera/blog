@@ -1,11 +1,10 @@
 <section>
-    {{ printf "%#v" .Site.Params }}
     <div class="jumbotron">
         <div class="container">
             <div class="row">
                 <div class="col-xs-6 text-left">
-                        {{ if not .IsHome }}
-                    <a href="" class="btn btn-default btn-round btn-lg" role="button">
+                    {{ if not .IsHome }}
+                    <a href="/" class="btn btn-default btn-round btn-lg" role="button">
                         <strong>INICIO</strong>
                     </a>
                     {{ end }}
@@ -15,10 +14,20 @@
                         <a href="{{ ref . `about` }}" class="btn btn-default btn-round btn-lg" role="button">
                             <i class="fa fa-user"></i>
                         </a>
-                        <a href="http://feeds.feedburner.com/llera" class="btn btn-default btn-round btn-lg" role="button">
+                        <a href="{{ .Site.Params.rssUrl }}" class="btn btn-default btn-round btn-lg" role="button">
                             <i class="fa fa-rss-square"></i>
                         </a>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="post-title-main">{{ .Title }}</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="post-meta">{{ .Date.Format "2/1/2006" }}</p>
                 </div>
             </div>
         </div>
