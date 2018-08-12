@@ -43,22 +43,7 @@ footer {
   bottom: 0px;
   padding: 0.5rem; }
 
-.manual-title {
-  font-size: 21px;
-  padding: 1rem;
-  text-transform: uppercase; }
-
-.manual-content {
-  text-align: justify;
-  font-size: 19px; }
-
-.man-title {
-  font-size: 22px;
-  text-align: center;
-  padding: 1rem;
-  letter-spacing: 2px; }
-
-.jumbotron {
+header {
   text-align: center;
   margin-top: 0px;
   background: #093750;
@@ -74,13 +59,6 @@ footer {
 .btn-round {
   background-color: #ABC0CA;
   border-radius: 0px 0px 22.5px 22.5px; }
-
-.download {
-  padding: 2rem;
-  font-size: 19px; }
-
-.intro {
-  font-size: 19px; }
 
 .post-list {
   text-align: center; }

@@ -1,6 +1,6 @@
 {{ define "main" }} {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 
-<div class="container">
+<article class="container">
 
     {{ range $paginator.Pages }}
     <div class="col-md-6 post-box text-center">
@@ -24,6 +24,6 @@
     <div class="row text-right">
         {{ partial "pagination" . }}
     </div>
-</div>
+</article>
 
 {{ end }}
