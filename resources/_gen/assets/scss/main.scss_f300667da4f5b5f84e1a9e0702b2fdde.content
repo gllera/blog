@@ -1,88 +1,51 @@
-.navbar-default {
-  background: #093750 !important;
-  border: none !important; }
-
-.navbar-static-bottom-fix {
-  margin-bottom: 0px; }
-
-.navbar-default .navbar-nav > li > a {
-  color: #abc0ca !important; }
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: #03a4fb !important; }
-
-.navbar-default .navbar-nav > li > a:focus {
-  color: #03a4fb !important; }
-
-.navbar-default .navbar-brand {
-  color: #abc0ca !important; }
-
-.footer-content {
-  text-align: center;
-  padding: 0.5em; }
-
-.footer-text {
-  margin: 0em 0em; }
-
+/*
+ * Responsive text aligning
+ * http://ohryan.ca/2014/08/14/set-responsive-text-alignment-bootstrap-3/
+ */
 body {
-  background-color: #022335 !important;
-  font-family: "Fira Mono" !important;
-  color: #abc0ca !important; }
-
-.page-stuff a {
-  color: #03a4fb !important;
-  text-decoration: none; }
-  .page-stuff a:hover {
-    color: #03a4fb !important;
-    text-decoration: none !important;
-    border-bottom: 1px dotted #03a4fb;
-    padding-bottom: 0.5em; }
-
-#page-content {
-  padding-bottom: 4em; }
-
-.page-stuff {
-  padding-top: 2em;
-  padding-bottom: 5em; }
+  background-color: #062739;
+  color: #abc0ca;
+  font-size: 16px;
+  font-family: Consolas, monaco, monospace;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
 a {
   color: #03a4fb;
   text-decoration: none; }
 
 a:hover {
-  color: #03a4fb !important;
-  text-decoration: none !important;
+  color: #03a4fb;
+  text-decoration: none;
   border-bottom: 1px dotted #03a4fb; }
 
 pre {
-  background-color: black !important;
-  border: none !important;
-  border-radius: 0px !important;
-  font-size: 20px !important;
-  padding: 1.5em !important;
-  color: white !important; }
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 0px;
+  font-size: 1.25rem;
+  padding: 1.5rem; }
 
-.site-title {
-  padding-bottom: 30px; }
+code {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0px; }
 
-.btn-round {
-  background-color: #ABC0CA;
-  border-radius: 0px 0px 22.5px 22.5px; }
-
-.page-tagline {
-  font-size: 20px;
-  text-align: center; }
-
-.download {
-  padding: 2em;
-  font-size: 19px; }
-
-.intro {
-  font-size: 19px; }
+footer {
+  background: #093750;
+  border: none;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+  margin-top: auto;
+  bottom: 0px;
+  padding: 0.5rem; }
 
 .manual-title {
   font-size: 21px;
-  padding: 1em;
+  padding: 1rem;
   text-transform: uppercase; }
 
 .manual-content {
@@ -92,78 +55,32 @@ pre {
 .man-title {
   font-size: 22px;
   text-align: center;
-  padding: 1em;
+  padding: 1rem;
   letter-spacing: 2px; }
-
-code {
-  background-color: black !important;
-  color: white !important;
-  border: none !important;
-  border-radius: 0px !important; }
 
 .jumbotron {
   text-align: center;
   margin-top: 0px;
-  background: #093750 !important;
+  background: #093750;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
   padding: 0px 0px 15px 0px; }
 
 .about-image {
   max-height: 250px; }
 
-.navbar {
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
-  min-height: 0px; }
+.site-title {
+  padding-bottom: 30px; }
 
-/*
- * Responsive text aligning
- * http://ohryan.ca/2014/08/14/set-responsive-text-alignment-bootstrap-3/
- */
-.text-xs-left {
-  text-align: left; }
+.btn-round {
+  background-color: #ABC0CA;
+  border-radius: 0px 0px 22.5px 22.5px; }
 
-.text-xs-right {
-  text-align: right; }
+.download {
+  padding: 2rem;
+  font-size: 19px; }
 
-.text-xs-center {
-  text-align: center; }
-
-.text-xs-justify {
-  text-align: justify; }
-
-@media (min-width: 768px) {
-  .text-sm-left {
-    text-align: left; }
-  .text-sm-right {
-    text-align: right; }
-  .text-sm-center {
-    text-align: center; }
-  .text-sm-justify {
-    text-align: justify; } }
-
-@media (min-width: 992px) {
-  .text-md-left {
-    text-align: left; }
-  .text-md-right {
-    text-align: right; }
-  .text-md-center {
-    text-align: center; }
-  .text-md-justify {
-    text-align: justify; } }
-
-@media (min-width: 1200px) {
-  .text-lg-left {
-    text-align: left; }
-  .text-lg-right {
-    text-align: right; }
-  .text-lg-center {
-    text-align: center; }
-  .text-lg-justify {
-    text-align: justify; }
-  .post-box-left {
-    padding-right: 30px; }
-  .post-box-right {
-    padding-left: 30px; } }
+.intro {
+  font-size: 19px; }
 
 .post-list {
   text-align: center; }
@@ -351,3 +268,49 @@ code {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+.text-xs-left {
+  text-align: left; }
+
+.text-xs-right {
+  text-align: right; }
+
+.text-xs-center {
+  text-align: center; }
+
+.text-xs-justify {
+  text-align: justify; }
+
+@media (min-width: 768px) {
+  .text-sm-left {
+    text-align: left; }
+  .text-sm-right {
+    text-align: right; }
+  .text-sm-center {
+    text-align: center; }
+  .text-sm-justify {
+    text-align: justify; } }
+
+@media (min-width: 992px) {
+  .text-md-left {
+    text-align: left; }
+  .text-md-right {
+    text-align: right; }
+  .text-md-center {
+    text-align: center; }
+  .text-md-justify {
+    text-align: justify; } }
+
+@media (min-width: 1200px) {
+  .text-lg-left {
+    text-align: left; }
+  .text-lg-right {
+    text-align: right; }
+  .text-lg-center {
+    text-align: center; }
+  .text-lg-justify {
+    text-align: justify; }
+  .post-box-left {
+    padding-right: 30px; }
+  .post-box-right {
+    padding-left: 30px; } }

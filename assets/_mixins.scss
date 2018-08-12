@@ -1,0 +1,32 @@
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+/*
+ * Responsive text aligning
+ * http://ohryan.ca/2014/08/14/set-responsive-text-alignment-bootstrap-3/
+ */
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin text-align($where) {
+    .text-#{$where}-left {
+        text-align: left;
+    }
+    .text-#{$where}-right {
+        text-align: right;
+    }
+    .text-#{$where}-center {
+        text-align: center;
+    }
+    .text-#{$where}-justify {
+        text-align: justify;
+    }
+}

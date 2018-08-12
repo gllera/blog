@@ -1,0 +1,18 @@
+@include text-align(xs);
+@media (min-width: 768px) {
+    @include text-align(sm);
+}
+
+@media (min-width: 992px) {
+    @include text-align(md);
+}
+
+@media (min-width: 1200px) {
+    @include text-align(lg);
+    .post-box-left {
+        padding-right: 30px;
+    }
+    .post-box-right {
+        padding-left: 30px;
+    }
+}
