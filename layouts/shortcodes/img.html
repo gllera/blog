@@ -1,0 +1,14 @@
+{{ $img_arr := split (.Get 0) "." }}
+{{ $image_ext := index $img_arr (sub (len $img_arr) 1) }}
+{{ $image_name := delimit (first (sub (len $img_arr) 1) $img_arr) "." }}
+
+{{ $img_lg := (printf "%s.%s" $image_name $image_ext ) }}
+{{ $img_sm := (printf "%s-sm.%s" $image_name $image_ext ) }}
+
+<p>
+    <picture {{ if .Get 2 }} class="{{ .Get 2 }}" {{ end }}>
+        <!-- <source media="(min-width: 535px)" srcset="{{ $img_lg }}"> -->
+        <!-- <source media="(max-width: 534px)" srcset="{{ $img_sm }}"> -->
+        <img src="{{ $img_lg }}" {{ if .Get 1 }} alt="{{ .Get 1 }}" {{ end }}>
+    </picture>
+</p>

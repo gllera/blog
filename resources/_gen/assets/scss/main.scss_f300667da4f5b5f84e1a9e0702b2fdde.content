@@ -35,30 +35,28 @@ code {
   border: none;
   border-radius: 0px; }
 
+header {
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
+  padding: 0 0 1rem 0;
+  background: #093750;
+  text-align: center;
+  margin-bottom: 2rem; }
+
 footer {
+  box-shadow: 0 -0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
   background: #093750;
   border: none;
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
   margin-top: auto;
-  bottom: 0px;
-  padding: 0.5rem; }
+  bottom: 0; }
 
-header {
-  text-align: center;
-  margin-top: 0px;
-  background: #093750;
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
-  padding: 0px 0px 15px 0px; }
-
-.about-image {
-  max-height: 250px; }
-
-.site-title {
-  padding-bottom: 30px; }
+.about-image > img {
+  max-height: 25rem;
+  border-radius: .5rem; }
 
 .btn-round {
-  background-color: #ABC0CA;
-  border-radius: 0px 0px 22.5px 22.5px; }
+  background-color: #abc0ca;
+  border-radius: 0 0 2rem 2rem; }
 
 .post-list {
   text-align: center; }
@@ -95,7 +93,8 @@ header {
 .post-content {
   font-size: 19px;
   text-align: justify;
-  padding-bottom: 1em; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .post-content img {
   max-width: 100%;
