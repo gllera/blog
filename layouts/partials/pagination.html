@@ -1,13 +1,15 @@
-<div class="col-xs-12 pagination">
+<div class="row">
+    <div class="col-12 text-right">
 
-    {{ if .Paginator.HasPrev }}
-    <a href="{{.Paginator.Prev.URL}}" class="previous">[Anterior]</a>
-    {{ end }}
+        {{ if .Paginator.HasPrev }}
+        <a href="{{.Paginator.Prev.URL}}" class="previous">[Anterior]</a>
+        {{ end }}
 
-    <span class="page_number ">Página: {{ .Paginator.PageNumber }} de {{ .Paginator.TotalPages }}</span>
+        <span class="page_number ">Página: {{ .Paginator.PageNumber }} de {{ .Paginator.TotalPages }}</span>
 
-    {{ if .Paginator.HasNext }}
-    <a href="{{.Paginator.Next.URL}}" class="next">[Siguiente]</a>
-    {{ end }}
+        {{ if .Paginator.HasNext }}
+        <a href="{{.Paginator.Next.URL}}" class="next">[Siguiente]</a>
+        {{ end }}
 
+    </div>
 </div>

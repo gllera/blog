@@ -1,41 +1,44 @@
-<header>
+<header class="jumbotron">
     <div class="container">
-
         <div class="row">
-            <div class="col-xs-6 text-left">
+            <div class="col-6 text-left">
 
                 {{ if not .IsHome }}
-                <a href="/" class="btn btn-default btn-round btn-lg" role="button">
+                <a href="/" class="btn btn-round btn-lg">
                     <strong>INICIO</strong>
                 </a>
                 {{ end }}
 
             </div>
-            <div class="col-xs-6 text-right">
+            <div class="col-6 text-right">
                 <div class="btn-group">
-                    <a href="{{ relref . `about` }}" class="btn btn-default btn-round btn-lg" role="button">
+                    <a href="{{ relref . `about` }}" class="btn btn-round btn-lg">
                         <i class="fa fa-user"></i>
                     </a>
-                    <a href="{{ .Site.Params.rssUrl }}" class="btn btn-default btn-round btn-lg" role="button">
+                    <a href="{{ .Site.Params.rssUrl }}" class="btn btn-round btn-lg">
                         <i class="fa fa-rss-square"></i>
                     </a>
                 </div>
             </div>
         </div>
 
+        {{ if eq .Type "post" }}
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-12">
                 <h1 class="post-title-main">{{ .Title }}</h1>
             </div>
         </div>
-
-        {{ if not .IsHome }}
         <div class="row">
-            <div class="col-xs-12">
-                <p class="post-meta">{{ .Date.Format "2/1/2006" }}</p>
+            <div class="col-12">
+                <p class="post-meta">{{ .Date.Format "2/01/2006" }}</p>
+            </div>
+        </div>
+        {{ else }}
+        <div class="row">
+            <div class="col-12">
+                <h1 class="site-title">{{ .Title }}</h1>
             </div>
         </div>
         {{ end }}
-
     </div>
 </header>

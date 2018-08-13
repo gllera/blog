@@ -1,26 +1,47 @@
 header {
     box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, 0.15);
-    padding: 0 0 1rem 0;
-    background: $brand-color;
+    padding: 0 0 1rem 0 !important;
+    background: $brand-color !important;
     text-align: center;
     margin-bottom: 2rem;
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+.post-meta {
+    font-size: 1.5rem;
+}
+
+.site-title {
+    padding: 1.3rem;
 }
 
 footer {
+    margin-top: auto;
+}
+
+.footer {
     box-shadow: 0 -.5rem 1rem 0 rgba(0, 0, 0, 0.15);
     padding: 0.5rem;
     background: $brand-color;
     border: none;
-    margin-top: auto;
+    margin-top: 1.5rem;
     bottom: 0;
 }
 
-.about-image > img {
+.about-image>img {
     max-height: 25rem;
     border-radius: .5rem;
 }
 
 .btn-round {
-    background-color: $text-color;
-    border-radius: 0 0 2rem 2rem;
+    border-radius: 0 0 .5rem .5rem;
+    color: $text-color;
+    background-color: $brand-color-dark1;
+    &:hover {
+        color: $text-color;
+        border-color: $brand-color-dark2;
+        background-color: $brand-color;
+    }
 }

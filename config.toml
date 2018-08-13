@@ -1,6 +1,6 @@
 baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "gllera"
+title = "gllera's blog"
 googleAnalytics = ""
 paginate = 6
 summaryLength = 70
