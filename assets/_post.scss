@@ -1,10 +1,5 @@
-.post-list {
-    text-align: center;
-}
-
 .post-box {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 1rem;
 }
 
 .post-box img {
@@ -14,8 +9,8 @@
 }
 
 .post-title {
-    font-size: 1.2rem !important;
-    color: #abc0ca !important;
+    font-size: 1.3rem;
+    color: $text-color;
 }
 
 .post-image {
@@ -23,17 +18,18 @@
 }
 
 .post-excerpt {
-    color: white !important;
     padding-top: 0.5em;
     padding-bottom: 0.3em;
     text-align: justify;
 }
 
-.posted {
+.post-date {
     text-align: center;
+    font-size: .8rem;
 }
 
 .post-title-main {
+    margin: .2rem;
     text-align: center;
     color: #abc0ca !important;
 }

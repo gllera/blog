@@ -2,32 +2,33 @@
  * Responsive text aligning
  * http://ohryan.ca/2014/08/14/set-responsive-text-alignment-bootstrap-3/
  */
+html {
+  font-size: 19px;
+  line-height: 1.5; }
+
 body {
   background-color: #062739;
-  color: #abc0ca;
-  font-size: 16px;
   font-family: Consolas, monaco, monospace;
-  line-height: 1.5;
+  color: #abc0ca;
   min-height: 100vh;
   display: flex;
   flex-direction: column; }
 
-a {
+article a {
   color: #03a4fb;
   text-decoration: none; }
-
-a:hover {
-  color: #03a4fb;
-  text-decoration: none;
-  border-bottom: 1px dotted #03a4fb; }
+  article a:hover {
+    color: #03a4fb;
+    text-decoration: none;
+    border-bottom: 0.1rem dotted #03a4fb; }
 
 pre {
   color: white;
   background-color: black;
   border: none;
   border-radius: 0px;
-  font-size: 1.25rem;
-  padding: 1.5rem; }
+  font-size: 1.05rem;
+  padding: 1.2rem; }
 
 code {
   background-color: black;
@@ -35,27 +36,32 @@ code {
   border: none;
   border-radius: 0px; }
 
+blockquote {
+  border-left: 5px solid #eee;
+  padding: 0 1rem; }
+
 header {
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.1rem 0.5rem 0 rgba(0, 0, 0, 0.15);
   padding: 0 0 1rem 0 !important;
   background: #093750 !important;
   text-align: center;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
   header h1 {
-    font-size: 4rem; }
+    font-size: 3.5rem; }
 
 .post-meta {
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
 
 .site-title {
-  padding: 1.3rem; }
+  padding: .5rem; }
 
 footer {
-  margin-top: auto; }
+  margin-top: auto;
+  font-size: 1rem; }
 
 .footer {
-  box-shadow: 0 -0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
-  padding: 0.5rem;
+  box-shadow: 0 -0.1rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  padding: 0.1rem;
   background: #093750;
   border: none;
   margin-top: 1.5rem;
@@ -68,18 +74,15 @@ footer {
 .btn-round {
   border-radius: 0 0 .5rem .5rem;
   color: #abc0ca;
-  background-color: #072e42; }
+  background-color: #072e42;
+  border-color: #062739; }
   .btn-round:hover {
     color: #abc0ca;
     border-color: #062739;
     background-color: #093750; }
 
-.post-list {
-  text-align: center; }
-
 .post-box {
-  padding-top: 2em;
-  padding-bottom: 2em; }
+  padding-bottom: 1rem; }
 
 .post-box img {
   height: auto;
@@ -87,22 +90,23 @@ footer {
   max-height: 150px; }
 
 .post-title {
-  font-size: 1.2rem !important;
-  color: #abc0ca !important; }
+  font-size: 1.3rem;
+  color: #abc0ca; }
 
 .post-image {
   text-decoration: none; }
 
 .post-excerpt {
-  color: white !important;
   padding-top: 0.5em;
   padding-bottom: 0.3em;
   text-align: justify; }
 
-.posted {
-  text-align: center; }
+.post-date {
+  text-align: center;
+  font-size: .8rem; }
 
 .post-title-main {
+  margin: .2rem;
   text-align: center;
   color: #abc0ca !important; }
 

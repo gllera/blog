@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "gllera's blog"
 googleAnalytics = ""
 paginate = 6
-summaryLength = 70
+summaryLength = 20
 
 [params]
     rssUrl = "http://feeds.feedburner.com/llera"

@@ -1,12 +1,15 @@
 {{ define "main" }} {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 
 <article class="container">
+    {{ range $paginator.Pages }}
     <div class="row">
-        {{ range $paginator.Pages }}
-        <div class="col-md-6 post-box text-center">
+        <div class="col-12 post-box text-center">
             <a href="{{ .RelPermalink }}">
                 <div class="post-title">
                     {{ .Title }}
+                </div>
+                <div class="post-date">
+                    {{ .Date.Format "2/1/2006" }}
                 </div>
                 <div class="post-image">
                     <img src="{{ .RelPermalink }}{{ .Params.image }}">
@@ -15,13 +18,9 @@
             <div class="post-excerpt">
                 {{ .Summary }} (...)
             </div>
-            <div class="posted">
-                {{ .Date.Format "2/1/2006" }}
-            </div>
         </div>
-        {{ end }}
     </div>
-    {{ partial "pagination" . }}
+    {{ end }} {{ partial "pagination" . }}
 </article>
 
 {{ end }}

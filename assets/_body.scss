@@ -1,24 +1,28 @@
 @charset "utf-8";
+html {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
 body {
     background-color: $background-color;
-    color: $text-color;
-    font-size: $base-font-size;
     font-family: $base-font-family;
-    line-height: $base-line-height;
+    color: $text-color;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-a {
-    color: $a-color;
-    text-decoration: none;
-}
-
-a:hover {
-    color: $a-color;
-    text-decoration: none;
-    border-bottom: 1px dotted $a-color;
+article {
+    a {
+        color: $a-color;
+        text-decoration: none;
+        &:hover {
+            color: $a-color;
+            text-decoration: none;
+            border-bottom: .1rem dotted $a-color;
+        }
+    }
 }
 
 pre {
@@ -26,8 +30,8 @@ pre {
     background-color: black;
     border: none;
     border-radius: 0px;
-    font-size: 1.25rem;
-    padding: 1.5rem;
+    font-size: 1.05rem;
+    padding: 1.2rem;
 }
 
 code {
@@ -35,4 +39,9 @@ code {
     color: white;
     border: none;
     border-radius: 0px;
+}
+
+blockquote {
+    border-left: 5px solid #eee;
+    padding: 0 1rem;
 }
