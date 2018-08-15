@@ -2,19 +2,35 @@
     padding-bottom: 1rem;
 }
 
+.media-body {
+    color: $text-color;
+}
+
 .post-box img {
     height: auto;
     width: auto;
     max-height: 150px;
 }
 
+li.media {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
 .post-title {
-    font-size: 1.3rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
     color: $text-color;
 }
 
 .post-image {
     text-decoration: none;
+    text-align: center;
+    width: 12rem;
+    img {
+        max-height: 10rem;
+        max-width: 10rem;
+    }
 }
 
 .post-excerpt {
@@ -24,19 +40,14 @@
 }
 
 .post-date {
-    text-align: center;
     font-size: .8rem;
+    margin-bottom: .5rem;
 }
 
 .post-title-main {
     margin: .2rem;
     text-align: center;
     color: #abc0ca !important;
-}
-
-.post-content {
-    font-size: 19px;
-    text-align: justify;
 }
 
 .post-content img {

@@ -61,11 +61,14 @@ footer {
 
 .footer {
   box-shadow: 0 -0.1rem 0.5rem 0 rgba(0, 0, 0, 0.15);
-  padding: 0.1rem;
+  padding: .3rem 0;
   background: #093750;
   border: none;
   margin-top: 1.5rem;
   bottom: 0; }
+  .footer .container {
+    display: flex;
+    justify-content: space-between; }
 
 .about-image > img {
   max-height: 25rem;
@@ -84,17 +87,30 @@ footer {
 .post-box {
   padding-bottom: 1rem; }
 
+.media-body {
+  color: #abc0ca; }
+
 .post-box img {
   height: auto;
   width: auto;
   max-height: 150px; }
 
+li.media {
+  margin-top: 1rem;
+  margin-bottom: 3rem; }
+
 .post-title {
-  font-size: 1.3rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
   color: #abc0ca; }
 
 .post-image {
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: center;
+  width: 12rem; }
+  .post-image img {
+    max-height: 10rem;
+    max-width: 10rem; }
 
 .post-excerpt {
   padding-top: 0.5em;
@@ -102,17 +118,13 @@ footer {
   text-align: justify; }
 
 .post-date {
-  text-align: center;
-  font-size: .8rem; }
+  font-size: .8rem;
+  margin-bottom: .5rem; }
 
 .post-title-main {
   margin: .2rem;
   text-align: center;
   color: #abc0ca !important; }
-
-.post-content {
-  font-size: 19px;
-  text-align: justify; }
 
 .post-content img {
   max-width: 100%;
@@ -263,6 +275,19 @@ footer {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+@media (max-width: 768px) {
+  .media {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 4rem; }
+  html {
+    font-size: 17.1px; } }
+
+@media (max-width: 576px) {
+  html {
+    font-size: 15.2px; } }
 
 .text-xs-left {
   text-align: left; }

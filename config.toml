@@ -3,10 +3,18 @@ languageCode = "en-us"
 title = "gllera's blog"
 googleAnalytics = ""
 paginate = 6
-summaryLength = 20
+summaryLength = 100
 
 [params]
     rssUrl = "http://feeds.feedburner.com/llera"
+
+[outputs]
+    home = [ "HTML", "RSS" ]
+    page = [ "HTML"]
+
+[outputFormats]
+    [outputFormats.RSS]
+        baseName = "feed"
 
 [social]
     # Add your social network accounts to the profile section on the left
@@ -22,4 +30,4 @@ summaryLength = 20
     gplus     = ""
 
 [permalinks]
-  post = "/:year/:month/:day/:filename/"
+  post = "/:year/:month/:day/:slug/"

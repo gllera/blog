@@ -2,8 +2,8 @@
 {{ $image_ext := index $img_arr (sub (len $img_arr) 1) }}
 {{ $image_name := delimit (first (sub (len $img_arr) 1) $img_arr) "." }}
 
-{{ $img_lg := (printf "%s.%s" $image_name $image_ext ) }}
-{{ $img_sm := (printf "%s-sm.%s" $image_name $image_ext ) }}
+{{ $img_lg := (printf "%s%s.%s" .Page.Permalink $image_name $image_ext ) }}
+{{ $img_sm := (printf "%s%s-sm.%s" .Page.Permalink $image_name $image_ext ) }}
 
 <p>
     <picture {{ if .Get 2 }} class="{{ .Get 2 }}" {{ end }}>

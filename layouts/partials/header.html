@@ -2,17 +2,16 @@
     <div class="container">
         <div class="row">
             <div class="col-6 text-left">
-
                 {{ if not .IsHome }}
                 <a href="/" class="btn btn-round btn-lg">
                     <strong>INICIO</strong>
                 </a>
                 {{ end }}
-
             </div>
+
             <div class="col-6 text-right">
                 <div class="btn-group">
-                    <a href="{{ relref . `about` }}" class="btn btn-round btn-lg">
+                    <a href="{{ ref . `/about/index.md` }}" class="btn btn-round btn-lg">
                         <i class="fa fa-user"></i>
                     </a>
                     <a href="{{ .Site.Params.rssUrl }}" class="btn btn-round btn-lg">

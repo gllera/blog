@@ -23,11 +23,16 @@ footer {
 
 .footer {
     box-shadow: 0 -.1rem .5rem 0 rgba(0, 0, 0, 0.15);
-    padding: 0.1rem;
+    padding: .3rem 0;
     background: $brand-color;
     border: none;
     margin-top: 1.5rem;
     bottom: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .about-image>img {

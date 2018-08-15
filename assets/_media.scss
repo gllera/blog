@@ -1,3 +1,21 @@
+@media (max-width: 768px) {
+    .media {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    html {
+        font-size: $base-font-size * 0.9;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: $base-font-size * 0.8;
+    }
+}
+
 @include text-align(xs);
 @media (min-width: 768px) {
     @include text-align(sm);

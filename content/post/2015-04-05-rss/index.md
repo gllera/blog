@@ -2,8 +2,9 @@
 title:  Suscripciones RSS
 date:   2015-04-05T23:43:29+01:00
 image:  flux-rss.png
+slug:   rss
 ---
-![RSS logo](flux-rss.png)
+{{< img "flux-rss.png" "RSS logo" >}}
 
 ¿Qué internauta de hoy en día no tiene sitios webs que visite a menudo buscando alguna novedad? Seguramente todos o casi todos pero desde mi punto de vista pienso que son pocos los que conocen cuánto las suscripciones RSS les puede resultar beneficioso en esta tarea.
 
@@ -16,11 +17,11 @@ En mi blog la segunda opción es la posible ya que por mantener el sitio simplis
 
 Una vez tienes los enlaces RSS de los sitios que te interesen existen muchas vías para consultarlos y ver qué novedades traen, les comentaré la forma en que yo lo hago que de momento no tengo quejas de ella :)
 
-![Feedly logo](feedly-inv.png)
+{{< img "feedly-inv.png" "Feedly logo" >}}
 
 Primero para evitar tener que consultar cada enlace por separado y ver si tienen o no novedades, lo mejor es dejar que un servidor en internet se encargue de esto y te las unifique para obtenerlas con una sola consulta. El servidor que uso para hacer esto es el de [Feedly](http://feedly.com/). Antes teníamos Google Reader y éste era el mejor por mucho pero al cerrar tuvimos que buscar alternativas y yo elegí Feedly pero hay [otras](http://alternativeto.net/software/feedly/) igual de interesantes.
 
-![gReader logo](greader.png)
+{{< img "greader.png" "gReader logo" >}}
 
 Con todos tus RSS descargados en los servidores de Feedly, los puedes consultar a través de su web o desde cualquier aplicación que soporte Feedly. Yo los suelo leer desde el móvil con [gReader Pro](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.readerpro) (también tiene versión [gratis](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader)) porque me los puedo descargar por wifi y verlos sin internet. Existe app oficial de Feedly para [android](https://play.google.com/store/apps/details?id=com.devhd.feedly) pero no tiene modo offline como gReader.
 
