@@ -6,26 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> {{ .Hugo.Generator }}
 
     <title>
-        {{ if .IsNode }}
-            {{ .Title }} &middot; 
-        {{end}}
-        {{ .Site.Title }}
+        {{ .Title }}
     </title>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> 
     {{ $style := resources.Get "main.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     <link rel="alternate" type="application/rss+xml" title="gllera" href="http://feeds.feedburner.com/llera">
 </head>
 
 <body>
-    {{ partial "header" . }}
-    {{ block "main" . }}{{ end }} 
-    {{ partial "footer" . }}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    {{ partial "header" . }} {{ block "main" . }}{{ end }} {{ partial "footer" . }}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 

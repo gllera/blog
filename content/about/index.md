@@ -1,5 +1,5 @@
 ---
-title:  sobre mi
+title: sobre mi
 ---
 
 {{< img "gllera.jpg" "GLlera" "about-image img-rounded" >}}

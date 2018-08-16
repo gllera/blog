@@ -1,8 +1,8 @@
 ---
-title:  Síntesis de voz
-date:   2015-12-06T23:12:06+01:00
+title:  tmp
+date:   2018-01-01T23:12:06+01:00
 image:  tts_woman.png
-slug:   tts
+slug:   tmp
 ---
 
 {{< img "tts_woman.png" "TTS Woman" >}}

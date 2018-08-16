@@ -8,6 +8,7 @@ header {
         font-size: 3.5rem;
     }
 }
+
 .post-meta {
     font-size: 1.2rem;
 }
@@ -28,7 +29,6 @@ footer {
     border: none;
     margin-top: 1.5rem;
     bottom: 0;
-
     .container {
         display: flex;
         justify-content: space-between;
@@ -50,4 +50,9 @@ footer {
         border-color: $brand-color-dark2;
         background-color: $brand-color;
     }
+}
+
+#disqus_thread {
+    min-height: 2.5rem;
+    text-align: center;
 }
