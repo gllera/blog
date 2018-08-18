@@ -12,9 +12,13 @@
     max-height: 150px;
 }
 
-li.media {
+.media {
     margin-top: 1rem;
     margin-bottom: 3rem;
+
+    &:hover {
+        border-bottom: 0;
+    }
 }
 
 .post-title {

@@ -4,8 +4,8 @@
 <article class="container">
     <ul class="list-unstyled">
         {{ range $paginator.Pages }}
-        <a href="{{ .RelPermalink }}">
-            <li class="media">
+        <li>
+            <a href="{{ .RelPermalink }}" class="media">
                 <div class="post-image">
                     <img src="{{ .RelPermalink }}{{ .Params.image }}">
                 </div>
@@ -14,14 +14,14 @@
                     <div class="post-date">
                         {{ .Date.Format "2/01/2006" }}
                     </div>
-                    {{ if gt (len .Summary) 200 }}
-                        {{ slicestr .Summary 0 200 }}(...)
-                    {{ else }}
-                        {{ .Summary }}(...)
+                    {{ if gt (len .Summary) 200 }} 
+                        {{ slicestr .Summary 0 200 }}(...) 
+                    {{ else }} 
+                        {{ .Summary }}(...) 
                     {{ end }}
                 </div>
-            </li>
-        </a>
+            </a>
+        </li>
         {{ end }} 
         {{ partial "pagination" . }}
     </ul>
