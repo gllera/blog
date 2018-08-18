@@ -3,20 +3,22 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> {{ .Hugo.Generator }}
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    {{ .Hugo.Generator }}
 
-    <title>
-        {{ .Title }}
-    </title>
+    <title>{{ .Title }}</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> 
     {{ $style := resources.Get "main.scss" | resources.ToCSS | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> 
     <link rel="alternate" type="application/rss+xml" title="gllera" href="http://feeds.feedburner.com/llera">
 </head>
 
 <body>
-    {{ partial "header" . }} {{ block "main" . }}{{ end }} {{ partial "footer" . }}
+    {{ partial "header" . }} 
+    {{ block "main" . }}{{ end }} 
+    {{ partial "footer" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
 </body>
 
 </html>

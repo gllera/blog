@@ -1,4 +1,5 @@
-{{ define "main" }} {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+{{ define "main" }} 
+{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 
 <article class="container">
     <ul class="list-unstyled">
@@ -21,7 +22,8 @@
                 </div>
             </li>
         </a>
-        {{ end }} {{ partial "pagination" . }}
+        {{ end }} 
+        {{ partial "pagination" . }}
     </ul>
 </article>
 
