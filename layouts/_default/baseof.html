@@ -9,8 +9,6 @@
         {{ .Title }}
     </title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> 
     {{ $style := resources.Get "main.scss" | resources.ToCSS | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
