@@ -19,4 +19,4 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: sh .circleci/builder.sh
+      - run: bash -e .circleci/builder.sh
