@@ -20,3 +20,15 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+
+      - restore_cache:
+          keys:
+          - v1-ci_binaries-{{ checksum ".circleci/builder.sh" }}
+          - v1-ci_binaries-
+          
+      - run: sh .circleci/builder.sh
+
+      - save_cache:
+          paths:
+            - .binaries
+          key: v1-ci_binaries-{{ checksum ".circleci/builder.sh" }}
