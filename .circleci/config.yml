@@ -26,3 +26,10 @@ jobs:
     steps:
       - checkout
       - run: sh .circleci/builder.sh
+
+workflows:
+  version: 2
+  install_and_build:
+    jobs:
+      - node_install
+      - hugo_build
