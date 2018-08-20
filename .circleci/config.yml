@@ -18,18 +18,5 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-          
-  hugo_build:
-    docker:
-      - image: circleci/node:10.9-stretch
 
-    steps:
-      - checkout
       - run: sh .circleci/builder.sh
-
-workflows:
-  version: 2
-  install_and_build:
-    jobs:
-      - node_install
-      - hugo_build
