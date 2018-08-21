@@ -7,7 +7,15 @@ jobs:
     steps:
       - checkout
       - run: bash -e .circleci/build-hugo.sh
-      - run: npm ci
+      - restore_cache:	
+          keys:	
+          - v1-dependencies-{{ checksum "package.json" }}	
+          - v1-dependencies-
+      - run: npm i
+      - save_cache:
+          paths:	
+            - node_modules	
+          key: v1-dependencies-{{ checksum "package.json" }}
       - run: bash -e .circleci/git-init.sh
       - run: npm start
       - run: bash -e .circleci/deploy.sh
