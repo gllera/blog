@@ -1,4 +1,4 @@
-alias curl='curl --silent --show-error --fail'
+alias curl='curl --silent --show-error -L --fail'
 
 HUGO_VERSION=0.47.1
 NODE_VERSION=8.11.4
