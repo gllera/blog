@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: buildpack-deps@sha256:1fa8778eb779a574f43b6da3d82f7252c48e251f467404c77ee2d6827459bb25
+      - image: buildpack-deps:stable-scm
     steps:
       - checkout
       - run: bash -e .circleci/get-deps.sh
