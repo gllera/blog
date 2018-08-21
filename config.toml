@@ -1,5 +1,5 @@
 baseurl = "https://gabriel.llera.eu/"
-languageCode = "es-es"
+languageCode = "es"
 title = "gllera's blog"
 googleAnalytics = "UA-28079199-1"
 paginate = 6
