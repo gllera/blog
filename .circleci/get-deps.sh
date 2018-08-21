@@ -1,5 +1,5 @@
 HUGO_VERSION=0.47.1
-NODE_VERSION=8.11.4
+NODE_VERSION=10.9.0
 NODE_HOME=/tmp/node-v${NODE_VERSION}-linux-x64/bin
 
 mkdir /tmp/hugo
