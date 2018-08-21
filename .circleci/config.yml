@@ -11,7 +11,8 @@ jobs:
       - run: npm i
       - save_cache:
           key: v1-dependencies-{{ checksum "package.json" }}
-          path: node_modules
+          paths:
+            - node_modules
       - run: bash -e .circleci/git-init.sh
       - run: npm start
       - run: bash -e .circleci/deploy.sh
