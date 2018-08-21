@@ -11,4 +11,6 @@ tar  -xf /tmp/node.tar.gz -C /tmp
 
 NODEJS_HOME=/tmp/node-v${NODE_VERSION}-linux-x64/bin
 
-echo 'export PATH="$NODEJS_HOME:/tmp/hugo:$PATH"' >> $BASH_ENV
+ls $NODEJS_HOME
+
+echo "export PATH='$NODEJS_HOME:/tmp/hugo:$PATH'" >> $BASH_ENV
