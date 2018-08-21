@@ -11,3 +11,5 @@ tar  -xf /tmp/node.tar.gz -C /tmp
 
 export NODEJS_HOME=/tmp/node-v${NODE_VERSION}-linux-x64/bin
 export PATH=$NODEJS_HOME:/tmp/hugo:$PATH
+
+hugo
