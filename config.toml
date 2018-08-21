@@ -17,3 +17,8 @@ paginate = 6
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
+
+[taxonomies]
+  tag = ""
+  group = ""
+  category = ""
