@@ -7,6 +7,7 @@ jobs:
       - checkout
       - run: bash -e .circleci/get-deps.sh
       - run: bash -e .circleci/build-hugo.sh
+      - run: bash -e .circleci/git-init.sh
       - restore_cache:
           key: v3-dependencies-{{ checksum "package.json" }}
       - run: npm i
@@ -15,6 +16,5 @@ jobs:
           paths:
             - node_modules
             - ~/.npm
-      - run: bash -e .circleci/git-init.sh
       - run: npm start
       - run: bash -e .circleci/deploy.sh
