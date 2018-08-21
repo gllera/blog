@@ -1,5 +1,6 @@
 HUGO_VERSION=0.47.1
 NODE_VERSION=8.11.4
+NODE_HOME=/tmp/node-v${NODE_VERSION}-linux-x64/bin
 
 mkdir /tmp/hugo
 
@@ -9,8 +10,4 @@ tar  -xf /tmp/hugo.tar.gz -C /tmp/hugo
 wget -qO /tmp/node.tar.gz https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.gz
 tar  -xf /tmp/node.tar.gz -C /tmp
 
-NODEJS_HOME=/tmp/node-v${NODE_VERSION}-linux-x64/bin
-
-ls $NODEJS_HOME
-
-echo "export PATH='$NODEJS_HOME:/tmp/hugo:$PATH'" >> $BASH_ENV
+echo "export PATH='$NODE_HOME:/tmp/hugo:$PATH'" >> $BASH_ENV
