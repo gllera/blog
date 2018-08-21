@@ -8,12 +8,11 @@ jobs:
       - run: bash -e .circleci/get-deps.sh
       - run: bash -e .circleci/build-hugo.sh
       - restore_cache:
-          key: v2-dependencies-{{ checksum "package.json" }}
+          key: v2-dependencies_-{{ checksum "package.json" }}
       - run: npm ci
       - save_cache:
-          key: v2-dependencies-{{ checksum "package.json" }}
+          key: v2-dependencies_-{{ checksum "package.json" }}
           paths:
-            - node_modules
             - ~/.npm
       - run: bash -e .circleci/git-init.sh
       - run: npm start
