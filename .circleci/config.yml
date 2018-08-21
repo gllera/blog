@@ -2,9 +2,10 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8.11-stretch
+      - image: buildpack-deps:stretch-scm
     steps:
       - checkout
+      - run: bash -e .circleci/get-deps.sh
       - run: bash -e .circleci/build-hugo.sh
       - restore_cache:
           key: v1-dependencies-{{ checksum "package.json" }}
