@@ -4,8 +4,9 @@ const del = require('del')
 const gulp = require('gulp')
 const autoprefixer = require('gulp-autoprefixer')
 const cleanCSS = require('gulp-clean-css')
+const purgecss = require('gulp-purgecss')
 const htmlmin = require('gulp-htmlmin')
-const flatmap = require('gulp-flatmap');
+const flatmap = require('gulp-flatmap')
 
 gulp.task('clean', function () {
 	return del(['dist/**/*', '!dist/.git'])
@@ -13,6 +14,9 @@ gulp.task('clean', function () {
 
 gulp.task('css', function () {
 	return gulp.src('public/**/*.css')
+		.pipe(purgecss({
+			content: ['public/**/*.html']
+		}))
 		.pipe(autoprefixer({
 			browsers: ['defaults']
 		}))
@@ -44,9 +48,9 @@ function tmp() {
 }
 
 gulp.task('copy', function () {
-	return gulp.src(['public/**/*' ,'!public/**/*.html', '!public/**/*.css'])
-		.pipe(gulp.dest('dist'));
-});
+	return gulp.src(['public/**/*', '!public/**/*.html', '!public/**/*.css'])
+		.pipe(gulp.dest('dist'))
+})
 
 gulp.task('html', function () {
 	return gulp.src('public/**/*.html')
