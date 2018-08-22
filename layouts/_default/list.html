@@ -12,7 +12,7 @@
                 <div class="media-body">
                     <h5 class="post-title">{{ .Title }}</h5>
                     <div class="post-date">
-                        {{ .Date.Format "2/01/2006" }}
+                        {{ .Date.Format "02-01-2006" }}
                     </div>
                     {{ if gt (len .Summary) 200 }} 
                         {{ slicestr .Summary 0 200 }}(...) 
