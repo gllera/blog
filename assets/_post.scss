@@ -6,16 +6,15 @@
     color: $text-color;
 }
 
-.post-box img {
-    height: auto;
-    width: auto;
-    max-height: 150px;
+.z10,
+.z10>* {
+    max-height: 10rem;
+    max-width: 10rem;
 }
 
 .media {
     margin-top: 1rem;
     margin-bottom: 3rem;
-
     &:hover {
         border-bottom: 0;
     }
