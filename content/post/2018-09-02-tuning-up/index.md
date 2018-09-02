@@ -3,7 +3,6 @@ title:  Puesta a punto - parte 1
 date:   2018-09-02T10:12:19+02:00
 image:  lightning.png
 slug:   tuning-1
-draft:  true
 ---
 
 {{< img "lightning.png" "lightning" "z10" >}}
