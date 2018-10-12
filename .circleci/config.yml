@@ -3,8 +3,13 @@ jobs:
   build:
     docker:
       - image: buildpack-deps:stable-scm
+    environment:
+      HUGO_VERSION: "0.48"
+      NODE_VERSION: "10.9.0"
     steps:
       - checkout
+      - run: 'export NODE_HOME="/tmp/node-v${NODE_VERSION}-linux-x64/bin"' >> $BASH_ENV
+      - run: 'export PATH="$NODE_HOME:/tmp/hugo:$PATH"' >> $BASH_ENV
       - run: bash -e .circleci/get-deps.sh
       - run: bash -e .circleci/build-hugo.sh
       - run: bash -e .circleci/git-init.sh
