@@ -9,5 +9,3 @@ tar  -xf /tmp/hugo.tar.gz -C /tmp/hugo
 
 wget -qO /tmp/node.tar.gz https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.gz
 tar  -xf /tmp/node.tar.gz -C /tmp
-
-echo "export PATH='$NODE_HOME:/tmp/hugo:$PATH'" >> $BASH_ENV

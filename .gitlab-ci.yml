@@ -1,5 +1,8 @@
 image: buildpack-deps:stable-scm
 
+before_script:
+  - export PATH="$NODE_HOME:/tmp/hugo:$PATH"
+
 builder:
     stage: build
     script:
