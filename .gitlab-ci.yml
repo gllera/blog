@@ -4,13 +4,14 @@ variables:
   HUGO_VERSION: "0.48"
   NODE_VERSION: "10.9.0"
 
-before_script:
-  - export NODE_HOME="/tmp/node-v${NODE_VERSION}-linux-x64/bin"
-  - export PATH="$NODE_HOME:/tmp/hugo:$PATH"
+stages:
+  - build
 
 builder:
     stage: build
     script:
+      - export NODE_HOME="/tmp/node-v${NODE_VERSION}-linux-x64/bin"
+      - export PATH="$NODE_HOME:/tmp/hugo:$PATH"
       - bash -e .circleci/get-deps.sh
       - bash -e .circleci/build-hugo.sh
       - bash -e .circleci/git-init.sh
