@@ -1,0 +1,11 @@
+image: buildpack-deps:stable-scm
+
+builder:
+    stage: build
+    script:
+      - bash -e .circleci/get-deps.sh
+      - bash -e .circleci/build-hugo.sh
+      - bash -e .circleci/git-init.sh
+      - npm i
+      - npm start
+      - bash -e .circleci/deploy.sh
