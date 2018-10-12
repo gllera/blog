@@ -1,7 +1,3 @@
-HUGO_VERSION=0.48
-NODE_VERSION=10.9.0
-NODE_HOME=/tmp/node-v${NODE_VERSION}-linux-x64/bin
-
 mkdir /tmp/hugo
 
 wget -qO /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
