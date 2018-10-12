@@ -1,7 +1,6 @@
 image: buildpack-deps:stable-scm
 
 variables:
-  CI_DEBUG_TRACE: "true"
   HUGO_VERSION: "0.48"
   NODE_VERSION: "10.9.0"
 
