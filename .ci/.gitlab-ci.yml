@@ -12,9 +12,9 @@ builder:
     script:
       - export NODE_HOME="/tmp/node-v${NODE_VERSION}-linux-x64/bin"
       - export PATH="$NODE_HOME:/tmp/hugo:$PATH"
-      - bash -e .circleci/get-deps.sh
-      - bash -e .circleci/build-hugo.sh
-      - bash -e .circleci/git-init.sh
+      - bash -e .ci/get-deps.sh
+      - bash -e .ci/build-hugo.sh
+      - bash -e .ci/git-init.sh
       - npm i
       - npm start
-      - bash -e .circleci/deploy.sh
+      - bash -e .ci/deploy.sh

@@ -10,9 +10,9 @@ jobs:
       - checkout
       - run: 'export NODE_HOME="/tmp/node-v${NODE_VERSION}-linux-x64/bin"' >> $BASH_ENV
       - run: 'export PATH="$NODE_HOME:/tmp/hugo:$PATH"' >> $BASH_ENV
-      - run: bash -e .circleci/get-deps.sh
-      - run: bash -e .circleci/build-hugo.sh
-      - run: bash -e .circleci/git-init.sh
+      - run: bash -e .ci/get-deps.sh
+      - run: bash -e .ci/build-hugo.sh
+      - run: bash -e .ci/git-init.sh
       - restore_cache:
           key: v3-dependencies-{{ checksum "package.json" }}
       - run: npm i
@@ -22,4 +22,4 @@ jobs:
             - node_modules
             - ~/.npm
       - run: npm start
-      - run: bash -e .circleci/deploy.sh
+      - run: bash -e .ci/deploy.sh
