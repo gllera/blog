@@ -1,20 +1,15 @@
 image: buildpack-deps:stable-scm
 
 variables:
-  HUGO_VERSION: "0.48"
-  NODE_VERSION: "10.9.0"
+  HUGO_VERSION: "0.49"
+  NODE_VERSION: "10.12.0"
 
-stages:
-  - build
+cache:
+  key: "blog_${NODE_VERSION}_${HUGO_VERSION}"
+  paths:
+  - .cache
 
-builder:
+build:
     stage: build
     script:
-      - export NODE_HOME="/tmp/node-v${NODE_VERSION}-linux-x64/bin"
-      - export PATH="$NODE_HOME:/tmp/hugo:$PATH"
-      - bash -e .ci/get-deps.sh
-      - bash -e .ci/build-hugo.sh
-      - bash -e .ci/git-init.sh
-      - npm i
-      - npm start
-      - bash -e .ci/deploy.sh
+      - bash -e .ci/build.sh
